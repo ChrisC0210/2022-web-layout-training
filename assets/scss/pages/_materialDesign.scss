@@ -1,0 +1,14 @@
+.materialDesign {
+  .container {
+    max-width: 1920px;
+    margin: auto;
+    width: 100%;
+  }
+  .bg-banner {
+    img{
+      width: 100%;
+      max-height: 956px;
+      object-fit: contain;
+    }
+  }
+}

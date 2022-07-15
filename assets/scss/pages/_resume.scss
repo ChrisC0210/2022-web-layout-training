@@ -1,69 +1,70 @@
-h1 {
-  font-size: 80px;
-  line-height: 95px;
-  border-bottom: solid 2px $black;
-}
-.text-title-1 {
-  color: $red;
-}
-.user-photo {
-  width: 324px;
-  display: block;
-}
-.border-black-1 {
-  border-bottom: 1px solid $black;
-  opacity: 1;
-}
-.border-white-1 {
-  border-bottom: 1px solid $white;
-  opacity: 1;
-}
-.skill-box {
-  //padding: 32px 102px 52px 102px;
-  text-align: center;
-  //padding: 0 462px;
-  position: relative;
-  margin: auto;
-  width: 996px;
-  .skill-title {
-    margin: auto 0;
+.resume {
+  h1 {
+    font-size: 80px;
+    line-height: 95px;
+    border-bottom: solid 2px $black;
+  }
+  .text-title-1 {
+    color: $red;
+  }
+  .user-photo {
+    width: 324px;
+    display: block;
+  }
+  .border-black-1 {
+    border-bottom: 1px solid $black;
+    opacity: 1;
+  }
+  .border-white-1 {
+    border-bottom: 1px solid $white;
+    opacity: 1;
+  }
+  .skill-box {
+    //padding: 32px 102px 52px 102px;
     text-align: center;
-
+    //padding: 0 462px;
+    position: relative;
+    margin: auto;
+    width: 996px;
+    .skill-title {
+      margin: auto 0;
+      text-align: center;
+    }
+    .skill-list {
+      text-align: left;
+      //margin: 0 auto;
+      display: inline-block;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+    }
   }
-  .skill-list {
-    text-align: left;
-    //margin: 0 auto;
-    display: inline-block;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
+  .border-left {
+    border-left: 1px solid $blue-200;
+    padding-left: 23px;
   }
-}
-.border-left {
-  border-left: 1px solid $blue-200;
-  padding-left: 23px;
-}
-.work-text{
-  max-width: 642px;
-}
-.footer-icon-box{
-  height: 48px;
-  display: block;
-  img{
-    width: 48px;
+  .work-text {
+    max-width: 642px;
+  }
+  .footer-icon-box {
     height: 48px;
+    display: block;
+    img {
+      width: 48px;
+      height: 48px;
+    }
   }
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.text-decoration-none{
-  text-decoration: none;
-}
-.contact-box{
-  margin: auto;
-  text-align: center;
-  text-decoration: none;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .text-decoration-none {
+    text-decoration: none;
+  }
+  .contact-box {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+  }
 }
