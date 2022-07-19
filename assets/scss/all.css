@@ -517,20 +517,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .materialDesign .brand-box .brand-box-img img {
   height: 416px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .materialDesign .brand-box .brand-box-img-1 {
-  width: 792px;
+  max-width: 792px;
+  width: 100%;
 }
 
 .materialDesign .brand-box .brand-box-img-2 {
-  width: 588px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.materialDesign .brand-box .brand-box-img-2 img {
+  width: calc(100%/2 - 12px);
 }
 
 .materialDesign .work-box {

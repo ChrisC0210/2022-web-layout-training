@@ -99,16 +99,23 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-self: center;
+      align-items: center;
       img {
         height: 416px;
+        object-fit: cover;
       }
     }
     .brand-box-img-1 {
-      width: 792px;
+      max-width: 792px;
+      width: 100%;
     }
     .brand-box-img-2 {
-      width: 588px;
+      display: flex;
+      justify-content: space-between;
+      //width: 588px;
+      img{
+      width: calc(100%/2 - 12px);
+      }
     }
   }
   //work-box
