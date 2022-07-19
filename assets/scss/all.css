@@ -63,7 +63,7 @@ a:hover, a:active, a:focus {
 
 body {
   line-height: 1.5;
-  font-family: "PingFang TC", "SF Pro Text", "Microsoft JhengHei", sans-serif, "Roboto";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: italic;
 }
 
