@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,20 +53,29 @@ table {
   border-spacing: 0;
 }
 
+img {
+  vertical-align: middle;
+}
+
+a:hover, a:active, a:focus {
+  opacity: 0.8;
+}
+
 body {
   line-height: 1.5;
   font-family: "PingFang TC", "SF Pro Text", "Microsoft JhengHei", sans-serif, "Roboto";
-}
-
-.fz-24-700 {
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 0px;
+  font-style: italic;
 }
 
 .fz-20-300 {
   font-size: 20px;
   font-weight: 300;
+  letter-spacing: 0px;
+}
+
+.fz-20-400 {
+  font-size: 20px;
+  font-weight: 400;
   letter-spacing: 0px;
 }
 
@@ -88,8 +97,53 @@ body {
   letter-spacing: 0px;
 }
 
+.fz-64-500-i-96 {
+  font-size: 64px;
+  line-height: 96px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.fz-64-500-i-84 {
+  font-size: 64px;
+  line-height: 84px;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.fz-24-700 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.fz-24-700-i {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  font-style: italic;
+}
+
+.fz-24-700-i-42 {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.fz-80-900-i {
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
 .black {
   color: #000000;
+}
+
+.gray-700 {
+  color: #707070;
 }
 
 .white {
@@ -100,8 +154,16 @@ body {
   color: #a00404;
 }
 
+.red-800 {
+  color: #891818;
+}
+
 .bg-blue {
   background-color: #415165;
+}
+
+.bg-black {
+  background-color: #000000;
 }
 
 .mt-16 {
@@ -120,12 +182,20 @@ body {
   margin-top: 48px;
 }
 
+.mt-56 {
+  margin-top: 56px;
+}
+
 .mt-64 {
   margin-top: 64px;
 }
 
 .mt-80 {
   margin-top: 80px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
 }
 
 .mb-7 {
@@ -136,12 +206,48 @@ body {
   margin-bottom: 8px;
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
 
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.mb-68 {
+  margin-bottom: 68px;
+}
+
+.mb-144 {
+  margin-bottom: 144px;
+}
+
+.mb-160 {
+  margin-bottom: 160px;
+}
+
 .ml-16 {
   margin-left: 16px;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-24 {
+  margin-right: 24px;
 }
 
 .pb-7 {
@@ -160,12 +266,36 @@ body {
   padding-bottom: 40px;
 }
 
+.pb-64 {
+  padding-bottom: 64px;
+}
+
+.pb-144 {
+  padding-bottom: 144px;
+}
+
+.pb-160 {
+  padding-bottom: 160px;
+}
+
 .pt-24 {
   padding-top: 24px;
 }
 
+.pt-56 {
+  padding-top: 56px;
+}
+
+.pt-64 {
+  padding-top: 64px;
+}
+
 .pr-23 {
   padding-right: 23px;
+}
+
+.resume a {
+  text-decoration: none;
 }
 
 .resume h1 {
@@ -244,16 +374,220 @@ body {
   text-decoration: none;
 }
 
+.materialDesign a {
+  text-decoration: none;
+}
+
 .materialDesign .container {
   max-width: 1920px;
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
+}
+
+.materialDesign .bg-banner {
+  background-image: url("/assets/week2/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #7777;
+  width: 100%;
+  height: 958px;
+  position: relative;
 }
 
 .materialDesign .bg-banner img {
   width: 100%;
   max-height: 956px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+@media screen and (max-width: 768px) {
+  .materialDesign .bg-banner img {
+    max-height: 80vh;
+  }
+}
+
+.materialDesign .bg-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.materialDesign .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.materialDesign .icon-box img {
+  width: 60px;
+  height: 60px;
+}
+
+.materialDesign .icon-box img:hover, .materialDesign .icon-box img:active, .materialDesign .icon-box img:focus {
+  opacity: 0.8;
+}
+
+.materialDesign .about-box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.materialDesign .about-box .about-box-img {
+  position: relative;
+  width: 384px;
+  height: 384px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.materialDesign .about-box .about-box-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.materialDesign .line {
+  width: 384px;
+  border: solid 1px #000000;
+}
+
+.materialDesign .list-box li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.materialDesign .list-box .icon-round {
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  border-radius: 50%;
+}
+
+.materialDesign .brand-box .brand-box-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.materialDesign .brand-box .brand-box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.materialDesign .brand-box .brand-box-img img {
+  height: 416px;
+}
+
+.materialDesign .brand-box .brand-box-img-1 {
+  width: 792px;
+}
+
+.materialDesign .brand-box .brand-box-img-2 {
+  width: 588px;
+}
+
+.materialDesign .work-box {
+  text-align: center;
+}
+
+.materialDesign .work-img-box {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.materialDesign .work-img-box li {
+  width: calc( 100%/3 - 12px);
+}
+
+.materialDesign .work-img-box li img {
+  width: 100%;
+}
+
+.materialDesign .work-img-box-2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.materialDesign .work-img-box-2 li {
+  width: calc( 100%/2 - 12px);
+}
+
+.materialDesign .work-img-box-2 li img {
+  width: 100%;
+}
+
+.materialDesign footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=all.css.map */

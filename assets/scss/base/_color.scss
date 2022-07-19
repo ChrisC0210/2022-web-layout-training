@@ -1,11 +1,16 @@
 $black: #000000;
+$gray-700: #707070;
 $white: #ffffff;
 $red: #a00404;
+$red-800: #891818;
 $blue: #415165;
 $blue-200: #96a9c4;
 //color
 .black {
   color: $black;
+}
+.gray-700 {
+  color: $gray-700;
 }
 .white {
   color: $white;
@@ -13,6 +18,13 @@ $blue-200: #96a9c4;
 .red {
   color: $red;
 }
+.red-800 {
+  color: $red-800;
+}
+
 .bg-blue {
   background-color: $blue;
+}
+.bg-black {
+  background-color: $black;
 }

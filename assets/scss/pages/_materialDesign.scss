@@ -1,14 +1,146 @@
 .materialDesign {
+  a {
+    text-decoration: none;
+  }
   .container {
     max-width: 1920px;
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
   }
   .bg-banner {
-    img{
+    background-image: url("/assets/week2/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #7777;
+    width: 100%;
+    height: 958px;
+    position: relative;
+    //margin: 0 auto;
+    img {
       width: 100%;
       max-height: 956px;
-      object-fit: contain;
+      object-fit: none;
+      @media screen and (max-width: 768px) {
+        max-height: 80vh;
+      }
     }
+  }
+  .bg-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    //max-width: 304px;
+  }
+  .icon-box {
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 60px;
+      height: 60px;
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
+  .about-box {
+    text-align: center;
+    //margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .about-box-img {
+      position: relative;
+      //margin: 0 auto;
+      width: 384px;
+      height: 384px;
+      align-self: center;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+    }
+  }
+  .line {
+    width: 384px;
+    border: solid 1px $black;
+  }
+  .list-box {
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icon-round {
+      width: 22px;
+      height: 22px;
+      background-color: $red-800;
+      border-radius: 50%;
+    }
+  }
+  .brand-box {
+    //height: 1146px;
+    .brand-box-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .brand-box-img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-self: center;
+      img {
+        height: 416px;
+      }
+    }
+    .brand-box-img-1 {
+      width: 792px;
+    }
+    .brand-box-img-2 {
+      width: 588px;
+    }
+  }
+  //work-box
+  .work-box{
+    text-align: center;
+  }
+  .work-img-box{
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    li{
+      width: calc( 100%/3 - 12px);
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .work-img-box-2{
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    li{
+      width: calc( 100%/2 - 12px);
+      img{
+        width: 100%;
+      }
+    }
+  }
+  //footer
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
